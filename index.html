@@ -7,27 +7,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tax-Calculator </title>
+
     <link rel="stylesheet" href="css/styles.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+
+    <title>Tax-Calculator </title>
 </head>
 
 <body>
     <div class="container mx-auto row bg-light p-0 " id="main-div">
-        <div class="col-md-12 col-sm-6 card-header text-light h2 " id="header">Rent iTax Calculator<span class="p lead  ml-3 text-dark">(2018-2019)</span>
+        <div class="col-md-12 col-sm-6 card-header text-light h2 " id="header">Rent iTax Calculator for Residents<span class="p lead  ml-3 text-dark">(2018-2019)</span>
             <span class="h6 float-right text-secondary">By: iTax Group Moringa Prep</span></div>
         <div class="col-md-6 col-sm-12 p-3" id="input">
             <div id="wrap" class="m-auto text-center text-white input-group row">
-                <label for="" class="col-6 ">Gross Rental Income:</label>
+                <label for="" class="col-6 ">Gross Annual Rental Income:</label>
                 <input type="text" class="col-6"> <br>
-                <label for="" class="col-6">Other Rental Income:</label>
+                <label for="" class="col-6">Any Other Annual Rental Income:</label>
                 <input type="text" class="col-6"> <br>
-                <label for="" class="col-6">Tax withheld:</label>
+                <label for="" class="col-6">Tax withheld (Residents Only!):</label>
                 <input type="text" class="col-6"> <br>
-                <label for="" class="col-6">Deductions: </label>
+                <label for="" class="col-6">Land Expenses: </label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6">Professional Expenses: </label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6">Material Expenses: </label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6 ">Marketing Expenses:</label>
+                <input type="text" class="col-6"> <br>
+                <label for="" class="col-6 ">Administrative Expenses:</label>
                 <input type="text" class="col-6"> <br>
                 <label for="" class="col-6">Tax Offsets:</label>
                 <input type="text" class="col-6"> <br>
@@ -48,7 +58,7 @@
                 <span class="btn btn-success w-75 mb-1" onclick="cal_Tax()">Calculate</span>
                 <span class=" btn btn-outline-primary mb-1" onclick="reset_All()">Reset</span>
             </h5>
-              <p class=" text-secondary mb-0 ml-3 text-left">Note: This calculation does not include 2% Medicare Levy!</p>
+              <p class=" text-secondary mb-0 ml-3 text-left">Note: This calculation does not include 16% VAT Levy for commercial rent income!</p>
             </h5>
         </div>
 

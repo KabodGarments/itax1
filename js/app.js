@@ -17,7 +17,7 @@ function cal_Tax() {
       Input_Values.push(Number(value));
     }
   }
-  let Taxable_Income = Input_Values[0] + Input_Values[1] - Input_Values[3];
+  let Taxable_Income = Input_Values[0] + Input_Values[1] - Input_Values[3] - Input_Values[4] - Input_Values[5] - Input_Values[6] - Input_Values[7];
   for (let i = 0; i < 5; i++) {
     if (
       Taxable_Income > Income_Ranges[i] &&
@@ -26,7 +26,7 @@ function cal_Tax() {
       let Gross_Tax =
         (Taxable_Income - Income_Ranges[i]) * Tax_Rates[i] + Minimum_Tax[i];
       Tax_Payable = (Gross_Tax - Input_Values[4]).toFixed(0);
-      Tax_Return = (Input_Values[2] - Tax_Payable).toFixed(0);
+      Tax_Return = (Tax_Payable - 0.12 * Input_Values[2]).toFixed(0);
     }
   }
 
@@ -45,7 +45,7 @@ function cal_Tax() {
 }
 
 function reset_All() {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 9; i++) {
     inputs[i].value = " ";
   }
   for (let i = 0; i < 4; i++) {

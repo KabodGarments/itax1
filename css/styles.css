@@ -1,12 +1,21 @@
+title {
+  font color: white;
+  box-shadow: 20px 10px 90px rgba(27, 3, 3, 0.466);
+  margin-top: 200px;
+}
+
 body {
   font-family: "Lato", sans-serif;
   background-color: black;
   margin: 0;
   padding: 0;
+  background-image: url("https://images.unsplash.com/photo-1539781898430-75f784e4f1af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80");
 }
 
 #main-div {
   box-shadow: 20px 10px 90px rgba(27, 3, 3, 0.466);
+  margin-top: 200px;
+  margin-bottom: 150px;
 }
 
 #input,
@@ -22,7 +31,7 @@ label,
 input {
   color: white;
   width: 50%;
-  height: 40px;
+  height: 60px;
   border: none;
   border-bottom: 1px solid #ffffffa8;
   background: #0cb2e42c;
