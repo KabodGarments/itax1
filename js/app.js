@@ -4,8 +4,8 @@ let outputs = document.querySelectorAll("#output>div>span");
 function cal_Tax() {
   let Input_Values = [];
   let Income_Ranges = [0, 121968, 236880, 351792, 466704, Number.MAX_VALUE];
-  let Minimum_Tax = [0, 12196.8, 17236.8, 22982.4, 28728,];
-  let Tax_Rates = [0.1, 0.15, 0.20, 0.25, 0.30];
+  let Minimum_Tax = [0, 12196.8, 28425.6, 70358.4, 116767,140011.2];
+  let Tax_Rates = [0.1, 0.15, 0.20, 0.25, 0.30, 0.30];
   let Tax_Return;
   let Tax_Payable;
 
