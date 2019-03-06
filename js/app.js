@@ -43,10 +43,9 @@ function cal_Tax() {
     }
   }
 
-//user logic//
+//user logic for Output delivery//
 
   let foo = Number(Input_Values[0] + Input_Values[1]);
-
 
   let total = document.getElementById("total");
   //calculate total income//
@@ -63,10 +62,10 @@ function cal_Tax() {
 }
 
 function reset_All() {
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 8; i++) {
     inputs[i].value = " ";
   }
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 3; i++) {
     outputs[i].innerHTML = "";
   }
 }
