@@ -62,10 +62,10 @@ function cal_Tax() {
 }
 
 function reset_All() {
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 9; i++) {
     inputs[i].value = " ";
   }
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     outputs[i].innerHTML = "";
   }
 }
