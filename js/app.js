@@ -69,3 +69,5 @@ function reset_All() {
     outputs[i].innerHTML = "";
   }
 }
+
+//More show and hide Butto//
