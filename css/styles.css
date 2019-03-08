@@ -48,4 +48,7 @@ label {
 #output > div {
   background: #982f2f;
 }
-/* more info section */
+/* contact us section */
+.container {
+  margin-top: 200px;
+}
